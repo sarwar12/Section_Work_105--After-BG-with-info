@@ -1,0 +1,64 @@
+/* Main CSS Start */
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+body{
+	font-family: sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0 0 15px;
+	font-weight: 700;
+}
+a:focus, input:focus, teaxarea:focus, button:focus{outline: 0 solid;}
+a:hover{
+	text-decoration: none;
+}
+.section-padding{padding: 80px 0;}
+/* Main CSS Stop */
+/* === Content BG Section CSS Start === */
+.absolute-bg-1:after{background-image: url(../img/absolute-bg-1.jpg);}
+.absolute-bg-2:after{background-image: url(../img/absolute-bg-2.jpg);}
+.section-padding {
+  position: relative;
+  z-index: 1;
+}
+.section-padding.absolute-bg-1, .section-padding.absolute-bg-2 {
+  margin: 50px 0;
+}
+.section-padding.absolute-bg-1:after, .section-padding.absolute-bg-2:after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-color: #ddd;
+}
+.section-padding.absolute-bg-2:after {
+  left: 0;
+  right: auto;
+}
+.boxed-content {
+  box-shadow: 0 0 4px #ccc;
+  padding: 50px;
+  text-align: center;
+  background: #fff;
+}
+.boxed-btn {
+  background: orange;
+  color: #333;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: 700;
+  border-radius: 10px 0;
+}
+/* === Content BG Section CSS Stop === */
